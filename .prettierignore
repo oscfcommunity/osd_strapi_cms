@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.cache/
+.tmp/
+
+# Strapi internals
+.strapi/
+.strapi-updater.json
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Lock files (let them use their own formatting)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Git
+.git/
+
+# Generated type files
+types/generated/
