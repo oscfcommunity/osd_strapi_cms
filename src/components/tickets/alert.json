@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_tickets_alerts",
+  "info": {
+    "displayName": "alert"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "classes": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

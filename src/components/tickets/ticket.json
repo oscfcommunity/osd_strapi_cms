@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_tickets_tickets",
+  "info": {
+    "displayName": "ticket"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "string"
+    },
+    "originalPrice": {
+      "type": "string"
+    },
+    "discountedPrice": {
+      "type": "string"
+    },
+    "couponCode": {
+      "type": "string"
+    },
+    "startsOn": {
+      "type": "datetime"
+    },
+    "popular": {
+      "type": "boolean"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "fillingFast": {
+      "type": "boolean"
+    },
+    "konfhubUrl": {
+      "type": "text"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "alert": {
+      "type": "component",
+      "component": "tickets.alert",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

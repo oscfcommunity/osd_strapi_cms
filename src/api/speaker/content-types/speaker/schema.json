@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "speakers",
+  "info": {
+    "singularName": "speaker",
+    "pluralName": "speakers",
+    "displayName": "speakerPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "currentSpeakers": {
+      "type": "component",
+      "component": "speakers.speaker-section",
+      "repeatable": false
+    },
+    "pastSpeaker": {
+      "type": "component",
+      "component": "speakers.speaker-section",
+      "repeatable": false
+    }
+  }
+}

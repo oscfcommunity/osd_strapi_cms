@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "teamPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "teams": {
+      "type": "component",
+      "component": "teams.team-section",
+      "repeatable": true
+    }
+  }
+}

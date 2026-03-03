@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sponsors_sponsor_sections",
+  "info": {
+    "displayName": "sponsorSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sponsors": {
+      "type": "component",
+      "component": "sponsors.sponsor",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_teams_teams",
+  "info": {
+    "displayName": "team"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "component",
+      "component": "common.roles",
+      "repeatable": true
+    },
+    "linkedin": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

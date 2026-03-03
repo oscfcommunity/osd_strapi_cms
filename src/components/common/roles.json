@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_roles",
+  "info": {
+    "displayName": "roles"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

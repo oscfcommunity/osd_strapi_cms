@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "singularName": "ticket",
+    "pluralName": "tickets",
+    "displayName": "ticketPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tickets": {
+      "type": "component",
+      "component": "tickets.ticket",
+      "repeatable": true
+    }
+  }
+}

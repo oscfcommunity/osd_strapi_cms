@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sponsors_sponsors",
+  "info": {
+    "displayName": "sponsor"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "website": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

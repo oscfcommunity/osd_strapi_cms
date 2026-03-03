@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_speakers_speakers",
+  "info": {
+    "displayName": "speaker"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "event": {
+      "type": "string"
+    },
+    "presentationTitle": {
+      "type": "string"
+    },
+    "link": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "presentationLink": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "component",
+      "component": "common.tags",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -7,7 +7,7 @@ set -e
 
 VPS_HOST="187.124.97.27"   # Change this to your VPS IP or domain
 VPS_USER="root"
-APP_DIR="/opt/app"
+APP_DIR="/opt/app/osd_strapi_cms"
 
 echo "Connecting to VPS and deploying..."
 

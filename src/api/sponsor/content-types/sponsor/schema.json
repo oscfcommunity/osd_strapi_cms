@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "singularName": "sponsor",
+    "pluralName": "sponsors",
+    "displayName": "sponsorPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sponsors": {
+      "type": "component",
+      "component": "sponsors.sponsor-section",
+      "repeatable": true
+    }
+  }
+}
