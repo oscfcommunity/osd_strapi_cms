@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_buttons",
+  "info": {
+    "displayName": "button"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "external": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

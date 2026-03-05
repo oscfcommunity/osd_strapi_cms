@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CommonButton extends Struct.ComponentSchema {
+  collectionName: 'components_common_buttons';
+  info: {
+    displayName: 'button';
+  };
+  attributes: {
+    external: Schema.Attribute.Boolean;
+    href: Schema.Attribute.String;
+    text: Schema.Attribute.String;
+  };
+}
+
 export interface CommonFeatures extends Struct.ComponentSchema {
   collectionName: 'components_common_features';
   info: {
@@ -7,6 +19,21 @@ export interface CommonFeatures extends Struct.ComponentSchema {
   };
   attributes: {
     feature: Schema.Attribute.Text;
+  };
+}
+
+export interface CommonHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_common_hero_sections';
+  info: {
+    displayName: 'heroSection';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    primaryCta: Schema.Attribute.Component<'common.button', false>;
+    secondaryCta: Schema.Attribute.Component<'common.button', false>;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    titleGradient: Schema.Attribute.String;
   };
 }
 
@@ -146,7 +173,9 @@ export interface TicketsTicket extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'common.button': CommonButton;
       'common.features': CommonFeatures;
+      'common.hero-section': CommonHeroSection;
       'common.roles': CommonRoles;
       'common.tags': CommonTags;
       'speakers.speaker': SpeakersSpeaker;

@@ -404,6 +404,7 @@ export interface ApiSpeakerSpeaker extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::speaker.speaker'> &
       Schema.Attribute.Private;
     ourSpeakers: Schema.Attribute.Component<'speakers.speaker-section', true>;
+    pageName: Schema.Attribute.String;
     pastSpeaker: Schema.Attribute.Component<'speakers.speaker-section', false>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -427,6 +428,7 @@ export interface ApiSponsorSponsor extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::sponsor.sponsor'> &
       Schema.Attribute.Private;
+    pageName: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     sponsors: Schema.Attribute.Component<'sponsors.sponsor-section', true>;
     updatedAt: Schema.Attribute.DateTime;
@@ -450,6 +452,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
       Schema.Attribute.Private;
+    pageName: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     teams: Schema.Attribute.Component<'teams.team-section', true>;
     updatedAt: Schema.Attribute.DateTime;
@@ -473,6 +476,7 @@ export interface ApiTicketTicket extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::ticket.ticket'> &
       Schema.Attribute.Private;
+    pageName: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     tickets: Schema.Attribute.Component<'tickets.ticket', true>;
     updatedAt: Schema.Attribute.DateTime;

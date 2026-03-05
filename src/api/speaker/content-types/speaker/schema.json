@@ -11,6 +11,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "pageName": {
+      "type": "string"
+    },
     "ourSpeakers": {
       "type": "component",
       "component": "speakers.speaker-section",

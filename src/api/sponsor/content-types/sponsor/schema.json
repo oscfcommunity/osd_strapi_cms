@@ -11,6 +11,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "pageName": {
+      "type": "string"
+    },
     "sponsors": {
       "type": "component",
       "component": "sponsors.sponsor-section",

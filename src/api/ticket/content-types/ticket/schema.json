@@ -11,6 +11,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "pageName": {
+      "type": "string"
+    },
     "tickets": {
       "type": "component",
       "component": "tickets.ticket",

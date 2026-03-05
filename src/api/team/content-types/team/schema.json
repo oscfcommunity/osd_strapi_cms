@@ -11,6 +11,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "pageName": {
+      "type": "string"
+    },
     "teams": {
       "type": "component",
       "component": "teams.team-section",

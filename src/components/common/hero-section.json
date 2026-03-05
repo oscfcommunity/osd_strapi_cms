@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_common_hero_sections",
+  "info": {
+    "displayName": "heroSection"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleGradient": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "primaryCta": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    },
+    "secondaryCta": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
