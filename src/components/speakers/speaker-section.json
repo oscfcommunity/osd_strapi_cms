@@ -6,7 +6,7 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "text"
+      "type": "string"
     },
     "segment": {
       "type": "string"

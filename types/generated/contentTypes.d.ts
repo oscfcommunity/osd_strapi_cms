@@ -400,6 +400,7 @@ export interface ApiSpeakerSpeaker extends Struct.CollectionTypeSchema {
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    heroSection: Schema.Attribute.Component<'common.hero-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::speaker.speaker'> &
       Schema.Attribute.Private;
@@ -425,6 +426,7 @@ export interface ApiSponsorSponsor extends Struct.CollectionTypeSchema {
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    heroSection: Schema.Attribute.Component<'common.hero-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::sponsor.sponsor'> &
       Schema.Attribute.Private;
@@ -449,6 +451,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    heroSection: Schema.Attribute.Component<'common.hero-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
       Schema.Attribute.Private;
@@ -473,6 +476,7 @@ export interface ApiTicketTicket extends Struct.CollectionTypeSchema {
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    heroSection: Schema.Attribute.Component<'common.hero-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::ticket.ticket'> &
       Schema.Attribute.Private;

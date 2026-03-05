@@ -14,6 +14,11 @@
     "pageName": {
       "type": "string"
     },
+    "heroSection": {
+      "type": "component",
+      "component": "common.hero-section",
+      "repeatable": false
+    },
     "teams": {
       "type": "component",
       "component": "teams.team-section",

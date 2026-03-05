@@ -83,7 +83,7 @@ export interface SpeakersSpeakerSection extends Struct.ComponentSchema {
   attributes: {
     segment: Schema.Attribute.String;
     speakers: Schema.Attribute.Component<'speakers.speaker', true>;
-    title: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
   };
 }
 
