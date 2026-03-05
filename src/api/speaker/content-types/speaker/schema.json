@@ -11,10 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "currentSpeakers": {
+    "ourSpeakers": {
       "type": "component",
       "component": "speakers.speaker-section",
-      "repeatable": false
+      "repeatable": true
     },
     "pastSpeaker": {
       "type": "component",

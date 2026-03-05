@@ -400,10 +400,10 @@ export interface ApiSpeakerSpeaker extends Struct.CollectionTypeSchema {
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
-    currentSpeakers: Schema.Attribute.Component<'speakers.speaker-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::speaker.speaker'> &
       Schema.Attribute.Private;
+    ourSpeakers: Schema.Attribute.Component<'speakers.speaker-section', true>;
     pastSpeaker: Schema.Attribute.Component<'speakers.speaker-section', false>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
