@@ -18,7 +18,7 @@ export interface CommonFeatures extends Struct.ComponentSchema {
     displayName: 'features';
   };
   attributes: {
-    feature: Schema.Attribute.Text;
+    featureText: Schema.Attribute.Text;
   };
 }
 
@@ -159,6 +159,7 @@ export interface TicketsTicket extends Struct.ComponentSchema {
     couponCode: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     discountedPrice: Schema.Attribute.String;
+    features: Schema.Attribute.Component<'common.features', true>;
     fillingFast: Schema.Attribute.Boolean;
     konfhubUrl: Schema.Attribute.Text;
     linkText: Schema.Attribute.String;

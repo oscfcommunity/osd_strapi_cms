@@ -45,6 +45,11 @@
       "type": "component",
       "component": "tickets.alert",
       "repeatable": false
+    },
+    "features": {
+      "type": "component",
+      "component": "common.features",
+      "repeatable": true
     }
   },
   "config": {}
