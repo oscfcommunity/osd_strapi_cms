@@ -159,7 +159,9 @@ export interface TicketsTicket extends Struct.ComponentSchema {
     couponCode: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     discountedPrice: Schema.Attribute.String;
+    extra: Schema.Attribute.Text;
     features: Schema.Attribute.Component<'common.features', true>;
+    featureTitle: Schema.Attribute.Text;
     fillingFast: Schema.Attribute.Boolean;
     konfhubUrl: Schema.Attribute.Text;
     linkText: Schema.Attribute.String;

@@ -50,6 +50,12 @@
       "type": "component",
       "component": "common.features",
       "repeatable": true
+    },
+    "extra": {
+      "type": "text"
+    },
+    "featureTitle": {
+      "type": "text"
     }
   },
   "config": {}
