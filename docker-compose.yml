@@ -7,7 +7,7 @@ services:
     container_name: strapi_app
     restart: always
     ports:
-      - "1337:1337"
+      - "127.0.0.1:1337:1337"
     env_file:
       - .env
     depends_on:
@@ -17,6 +17,12 @@ services:
       - ./uploads:/app/public/uploads
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:1337/_health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
 
   postgres:
     image: postgres:17-alpine
